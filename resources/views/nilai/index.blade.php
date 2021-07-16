@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header bg-dark text-white">DATA NILAI
+                <div class="card-header">DATA NILAI
                     <a href="{{route('tambah.nilai')}}" class="btn btn-primary btn-md float-right">Tambah Data</a>
                 </div>
 

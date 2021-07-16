@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header bg-dark text-white">Edit Nilai</div>
+                <div class="card-header">Edit Nilai</div>
 
                 <div class="card-body">
                 <form method="POST" action="{{ route('update.nilai', $nilai->id),}}">

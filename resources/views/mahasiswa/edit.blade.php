@@ -6,7 +6,7 @@
      <div class="row justify-content-center">
          <div class="col-md-12">
              <div class="card">
-                 <div class="card-header bg-dark text-white">Edit Mahasiswa</div>
+                 <div class="card-header">Edit Mahasiswa</div>
                  <div class="card-body">
                  <form method="POST" action="{{ route('update.mahasiswa', $mahasiswa->id)}}">
                  @csrf
