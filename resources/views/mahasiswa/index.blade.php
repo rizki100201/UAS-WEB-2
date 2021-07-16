@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-13">
             <div class="card">
                 <div class="card-header bg-dark text-white">DATA MAHASISWA
                 <a href="{{route('tambah.mahasiswa')}}" class="btn btn-primary btn-md float-right">Tambah Data</a>
@@ -31,8 +31,8 @@
                        <td>{{ $mhs->telepon }}</td>
                        <td><center>{{ $mhs->gender }}</center></td>
                        <td>
-                            <a href="#" class="btn btn-sm btn-warning">Edit</a>
-                            <a href="#" class="btn btn-sm btn-danger">Hapus</a>
+                            <a href="{{ route('edit.mahasiswa', $mhs->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                            <a href="{{ route('hapus.mahasiswa', $mhs->id) }}" class="btn btn-sm btn-danger">Hapus</a>
                        </td>
                    </tr>
                    @endforeach

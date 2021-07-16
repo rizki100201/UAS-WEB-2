@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header bg-dark text-white">DATA MAKUL
+                <div class="card-header bg-dark text-white">DATA MATA KULIAH
                 <a href="{{ route('tambah.makul') }}" class="btn btn-primary btn-md float-right">Tambah Data</a>
                 </div>
                 
@@ -13,7 +13,7 @@
                     <div class="table-responsive">
                         <table  class="table table-bordered">
                         <tr>
-                            <th><center>NO.</center></th>
+                            <th><center>NO</center></th>
                             <th><center>KODE MAKUL</center></th>
                             <th><center>NAMA MAKUL</center></th>
                             <th><center>SKS</center></th>
@@ -27,7 +27,7 @@
                             <td><center>{{ $mk->sks }}</center></td>
                             <td><center>
                             <a href="{{ route('makul.edit', $mk->id) }}" class="btn btn-sm btn-warning">EDIT</a>
-                            <a href="#" class="btn btn-sm btn-danger">HAPUS</a>
+                            <a href="{{ route('hapus.makul', $mk->id) }}" class="btn btn-sm btn-danger">HAPUS</a>
                             </center>
                             </td>
                         </tr>
